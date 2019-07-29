@@ -9,14 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cheer.common</groupId>
-    <artifactId>huangou-registry</artifactId>
+    <groupId>com.cheer.service</groupId>
+    <artifactId>huangou-item</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-    </dependencies>
+    <packaging>pom</packaging>
+    <modules>
+        <module>huangou-item-interface</module>
+        <module>huangou-item-service</module>
+    </modules>
 </project>

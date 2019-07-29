@@ -10,13 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cheer.common</groupId>
-    <artifactId>huangou-registry</artifactId>
+    <artifactId>huangou-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-    </dependencies>
+
 </project>

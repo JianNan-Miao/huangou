@@ -5,6 +5,8 @@
     <modules>
         <module>huangou-registry</module>
         <module>huangou-api-gateway</module>
+        <module>huangou-item</module>
+        <module>huangou-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -26,9 +28,9 @@
         <mybatis.starter.version>2.1.0</mybatis.starter.version>
         <mapper.starter.version>2.1.5</mapper.starter.version>
         <druid.starter.version>1.1.18</druid.starter.version>
-        <mysql.version>5.1.47</mysql.version>
+        <mysql.version>8.0.17</mysql.version>
         <pageHelper.starter.version>1.2.12</pageHelper.starter.version>
-        <huangou.latest.version>1.0.0-SNAPSHOT</huangou.latest.version>
+        <huangou.latest.version>0.0.1-SNAPSHOT</huangou.latest.version>
         <fastDFS.client.version>1.27-RELEASE</fastDFS.client.version>
     </properties>
 
