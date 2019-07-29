@@ -2,7 +2,7 @@ server:
   port: 8020
 spring:
   application:
-    name: huangou-pi-gateway
+    name: huangou-api-gateway
 eureka:
   client:
     service-url:
