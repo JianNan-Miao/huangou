@@ -4,6 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>huangou-registry</module>
+        <module>huangou-api-gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -11,13 +12,12 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cheer</groupId>
+    <groupId>com.cheer.parent</groupId>
     <artifactId>huangou</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>huangou</name>
     <description>huangou</description>
     <packaging>pom</packaging>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

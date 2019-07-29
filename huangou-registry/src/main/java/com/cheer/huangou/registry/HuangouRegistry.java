@@ -1,4 +1,4 @@
-package com.cheer.huangou;
+package com.cheer.huangou.registry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
