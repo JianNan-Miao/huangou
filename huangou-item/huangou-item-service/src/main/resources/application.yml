@@ -1,5 +1,6 @@
 server:
   port: 8030
+
 spring:
   application:
     name: huangou-item-service
@@ -10,6 +11,7 @@ spring:
     hikari:
       maximum-pool-size: 30
       minimum-idle: 10
+
 eureka:
   client:
     service-url:
