@@ -1,11 +1,11 @@
 server:
-  port: 8030
+  port: ${huangou-item-service.port}
 
 spring:
   application:
     name: huangou-item-service
   datasource:
-    url: jdbc:mysql://localhost:3306/huangou
+    url: jdbc:mysql://localhost:3306/huangou?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 1qaz2wsx
     hikari:
@@ -15,7 +15,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8010/eureka
+      defaultZone: http://127.0.0.1:${huangou-registry.port}/eureka
   instance:
     lease-renewal-interval-in-seconds: 5 # 每隔5秒发送一次心跳
     lease-expiration-duration-in-seconds: 10 # 10秒不发送就过期

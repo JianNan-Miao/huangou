@@ -26,5 +26,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.cheer.common</groupId>
+            <artifactId>huangou-common</artifactId>
+            <version>${huangou.latest.version}</version>
+        </dependency>
     </dependencies>
 </project>
