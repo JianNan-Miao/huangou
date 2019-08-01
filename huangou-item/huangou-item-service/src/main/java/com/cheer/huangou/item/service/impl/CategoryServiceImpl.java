@@ -5,9 +5,11 @@ import com.cheer.huangou.item.service.CategoryService;
 import com.cheer.huangou.model.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Transactional
 @Service
 public class CategoryServiceImpl implements CategoryService {
     @Autowired

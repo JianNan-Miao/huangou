@@ -28,9 +28,10 @@ public class CategoryController {
      * @return
      */
     @GetMapping("list")
-    public ResponseEntity<List<Category>> list(@RequestParam(defaultValue = "0") Long parentId) {
+    public ResponseEntity<List<Category>> list(@RequestParam(value = "pid",defaultValue = "0") Long parentId) {
         log.traceEntry();
         List<Category> categoryList = this.categoryService.queryListByParent(parentId);
+
         return CollectionUtils.isEmpty(categoryList) ? new ResponseEntity<>(HttpStatus.NOT_FOUND) :
                 ResponseEntity.ok(categoryList);
     }
