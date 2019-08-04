@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.List;
+
 
 @Service
 @Transactional
@@ -54,5 +56,18 @@ public class BrandServiceImpl implements BrandService {
         Page<Brand> pageInfo = (Page<Brand>) this.brandMapper.selectByExample(example);
 
         return new PageResult<>(pageInfo.getTotal(), pageInfo);
+    }
+
+    public void saveBrand(Brand brand, List<Long> cids){
+        //新增品牌
+        brand.setId(null);
+        int count = brandMapper.insert(brand);
+
+
+        //新增中间表
+        for (Long cid : cids) {
+             brandMapper.insertCategoryBrand(cid,brand.getId());
+        }
+
     }
 }
